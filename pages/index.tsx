@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Specialties from '../components/specialties';
+import Specialties from '../components/home/specialties';
+import SocialNetworkBoxes from '../components/home/socialNetworkBoxes';
 
 export default function Home() {
   
-  const data = [
+  const dataExpertises = [
     {
       imageCategory: '/images/home/terminal.png',
       title: 'Expertises',
@@ -26,31 +27,35 @@ export default function Home() {
     <Head>
       <title>Home - DevPCT</title>
     </Head>
+
+
     <header>
       <div className="flex mx-[5rem]">
         <div className='text-center rounded-b-[100%] overflow-hidden w-[15rem] h-[14rem] bg-[#EDB836] pt-[1rem]'>  
-          <img className='w-[100%] h-[100%]' src="https://avatars.githubusercontent.com/u/102470936?v=4" loading='lazy'/>
+          <img className='w-full h-full' src="https://avatars.githubusercontent.com/u/102470936?v=4" loading='lazy'/>
         </div>
-        <div className='m-[3.5rem] w-[100%]'>
+        <div className='m-[3.5rem] w-full'>
           <div className='ml-[1rem]'>
           <h2 className='text-[1.9rem] font-[300]'>Mohammad</h2>
           <h1 className='text-[2.5rem]'>Abdollahzadeh</h1>
           </div>
-          <hr className='mt-[1rem] mb-[0.4rem] w-[100%] border-[#EDB836] border-[2px] rounded-full' />
+          <hr className='mt-[1rem] mb-[0.4rem] w-full border-[#EDB836] border-[2px] rounded-full' />
           <p className='text-[1.2rem] font-bold ml-[1rem] tracking-[0.2rem]'>FRONTEND DEVELOPER</p>
         </div>
       </div>
-        <img className='w-[100%] h-[35vh] absolute top-[10rem]' src="/images/home/line.png" loading='lazy' />
+        <img className='w-full h-[35vh] absolute top-[10rem]' src="/images/home/line.png" loading='lazy' />
     </header>
+
+
     <main className='mt-[15rem]'>
-      <div className='flex items-center w-[100%] gap-x-[1rem] justify-center '>
+      <div className='flex items-center w-full gap-x-[1rem] justify-center '>
       <img className='w-[3rem] h-[3rem]' src="/images/home/expertises.png" loading='lazy'/>
       <p className='text-[3rem] font-medium'>Expertises</p>
       </div>
 
-      <div className='w-[100%] h-fit pl-[10rem] mt-[5rem]'>
+      <div className='w-full h-fit lg:pl-[10rem] px-[2rem] mt-[5rem]'>
 
-      {data.map((item, index) => (
+      {dataExpertises.map((item, index) => (
         <Specialties
           key={index}
           imageCategory={item.imageCategory}
@@ -61,6 +66,20 @@ export default function Home() {
  
       </div>
     </main>
+
+
+    <footer className='w-full'>
+        <div className='w-full h-full bg-[#D9D9D9] p-[2.5rem] rounded-t-[52px] mt-[9rem]'>
+          
+          <div className='flex items-center justify-center gap-x-5'>
+            <img className='w-[3rem]' src="/images/home/message.png" loading='lazy' />
+            <p className='text-[2.2rem] font-medium'>Connect with me</p>
+          </div>
+
+        <SocialNetworkBoxes/>
+
+        </div>
+    </footer> 
     </>
   )
 }
