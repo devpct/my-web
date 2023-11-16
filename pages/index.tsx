@@ -29,25 +29,23 @@ export default function Home() {
     </Head>
 
 
-    <header>
-      <div className="flex mx-[5rem]">
-        <div className='text-center rounded-b-[100%] overflow-hidden w-[15rem] h-[14rem] bg-[#EDB836] pt-[1rem]'>  
+    <header >
+      <div className="flex w-full lg:justify-center  lg:flex-row flex-col gap-x-[4rem] gap-y-[3rem] lg:text-justify text-center">
+        <div className='text-center rounded-b-[100%] lg:m-0 m-auto overflow-hidden w-[15rem] h-[16rem]  bg-[#EDB836] pt-[1rem] '>  
           <img className='w-full h-full' src="https://avatars.githubusercontent.com/u/102470936?v=4" loading='lazy'/>
         </div>
-        <div className='m-[3.5rem] w-full'>
-          <div className='ml-[1rem]'>
+        <div className='lg:mt-[3.5rem] w-[70%] lg:m-0 m-auto'>
           <h2 className='text-[1.9rem] font-[300]'>Mohammad</h2>
           <h1 className='text-[2.5rem]'>Abdollahzadeh</h1>
-          </div>
           <hr className='mt-[1rem] mb-[0.4rem] w-full border-[#EDB836] border-[2px] rounded-full' />
-          <p className='text-[1.2rem] font-bold ml-[1rem] tracking-[0.2rem]'>FRONTEND DEVELOPER</p>
+          <p className='md:text-[1.2rem] text-[1rem] font-bold ml-[1rem] tracking-[0.2rem]'>FRONTEND DEVELOPER</p>
         </div>
       </div>
-        <img className='w-full h-[35vh] absolute top-[10rem]' src="/images/home/line.png" loading='lazy' />
+        <img className='md:mt-[7rem] lg:mt-0 w-full md:h-[35vh] h-[15vh]  absolute lg:top-[10rem] md:top-[14rem]' src="/images/home/line.png" loading='lazy' />
     </header>
 
 
-    <main className='mt-[15rem]'>
+    <main className='md:mt-[17rem] mt-[10rem]'>
       <div className='flex items-center w-full gap-x-[1rem] justify-center '>
       <img className='w-[3rem] h-[3rem]' src="/images/home/expertises.png" loading='lazy'/>
       <p className='text-[3rem] font-medium'>Expertises</p>
@@ -69,11 +67,11 @@ export default function Home() {
 
 
     <footer className='w-full'>
-        <div className='w-full h-full bg-[#D9D9D9] p-[2.5rem] rounded-t-[52px] mt-[9rem]'>
+        <div className='w-full h-full bg-[#D9D9D9] md:p-[2.5rem] p-[1rem] rounded-t-[52px] md:mt-[9rem]'>
           
           <div className='flex items-center justify-center gap-x-5'>
             <img className='w-[3rem]' src="/images/home/message.png" loading='lazy' />
-            <p className='text-[2.2rem] font-medium'>Connect with me</p>
+            <p className='lg:text-[2.2rem] text-[2rem] font-medium'>Connect with me</p>
           </div>
 
         <SocialNetworkBoxes/>
