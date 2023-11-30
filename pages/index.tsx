@@ -47,7 +47,7 @@ export default function Home() {
 
     <main className='md:mt-[17rem] mt-[10rem]'>
       <div className='flex items-center w-full gap-x-[1rem] justify-center '>
-      <img className='w-[3rem] h-[3rem]' src="/images/home/expertises.png" loading='lazy'/>
+      <img className='w-[3rem] h-[3rem]' src="./images/home/expertises.png" loading='lazy'/>
       <p className='text-[3rem] font-medium'>Expertises</p>
       </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
         <div className='w-full h-full bg-[#D9D9D9] md:p-[2.5rem] p-[1rem] rounded-t-[52px] md:mt-[9rem]'>
           
           <div className='flex items-center justify-center gap-x-5'>
-            <img className='w-[3rem]' src="/images/home/message.png" loading='lazy' />
+            <img className='w-[3rem]' src="./images/home/message.png" loading='lazy' />
             <p className='lg:text-[2.2rem] text-[2rem] font-medium'>Connect with me</p>
           </div>
 
