@@ -7,7 +7,7 @@ function socialNetworkBoxes() {
 
       <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/gmail-icon.png', '/images/home/linkedin.png']}
+        images={['./images/home/gmail-icon.png', './images/home/linkedin.png']}
         colorText={['#33333394', '#0A66C2']}
         title={['Gmail', 'Linkedin']}
         FST={['3.3rem','3.3rem']}
@@ -15,7 +15,7 @@ function socialNetworkBoxes() {
 
       <SocialNetworkBox
         backgroundColor={'#242938'}
-        images={['/images/home/codepen.png', '/images/home/stackoverflow.png']}
+        images={['./images/home/codepen.png', './images/home/stackoverflow.png']}
         colorText={['#fff', '#DA7526']}
         title={['Codepen', 'Stackoverflow']}
         FST={['3.3rem','2.5rem']}
@@ -23,7 +23,7 @@ function socialNetworkBoxes() {
 
       <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/x.png', '/images/home/instagram.png']}
+        images={['./images/home/x.png', './images/home/instagram.png']}
         colorText={['', '#33333394']}
         title={['', 'Instagram']}
         FST={['3.3rem','3.3rem']}
@@ -31,7 +31,7 @@ function socialNetworkBoxes() {
 
       <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/github.png']}
+        images={['./images/home/github.png']}
         colorText={['#33333394']}
         title={['Github']}
         FST={['3.3rem','3.3rem']}

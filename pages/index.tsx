@@ -6,19 +6,19 @@ export default function Home() {
   
   const dataExpertises = [
     {
-      imageCategory: '/images/home/terminal.png',
+      imageCategory: './images/home/terminal.png',
       title: 'Expertises',
-      images: ['/images/home/languages/js.png', '/images/home/languages/ts.png', '/images/home/languages/nodejs.png', '/images/home/languages/html.png', '/images/home/languages/css.png' ],
+      images: ['./images/home/languages/js.png', './images/home/languages/ts.png', './images/home/languages/nodejs.png', './images/home/languages/html.png', './images/home/languages/css.png' ],
     },
     {
-      imageCategory: '/images/home/box.png',
+      imageCategory: './images/home/box.png',
       title: 'Frameworks',
-      images: ['/images/home/frameworks/nextjs.png', '/images/home/frameworks/react.png', '/images/home/frameworks/jquery.png', '/images/home/frameworks/scss.png', '/images/home/frameworks/redax.png', '/images/home/frameworks/mui.png', '/images/home/frameworks/bootstrap.png', '/images/home/frameworks/tailwind.png', '/images/home/frameworks/regex.png', '/images/home/frameworks/wordpress.png' ],
+      images: ['./images/home/frameworks/nextjs.png', './images/home/frameworks/react.png', './images/home/frameworks/jquery.png', './images/home/frameworks/scss.png', './images/home/frameworks/redax.png', './images/home/frameworks/mui.png', './images/home/frameworks/bootstrap.png', './images/home/frameworks/tailwind.png', './images/home/frameworks/regex.png', './images/home/frameworks/wordpress.png' ],
     },
     {
-      imageCategory: '/images/home/git-pull-request.png',
+      imageCategory: './images/home/git-pull-request.png',
       title: 'Tools',
-      images: ['/images/home/tools/figma.png', '/images/home/tools/git.png', '/images/home/tools/linux.png', '/images/home/tools/vscode.png'],
+      images: ['./images/home/tools/figma.png', './images/home/tools/git.png', './images/home/tools/linux.png', './images/home/tools/vscode.png'],
     },
   ]
 
@@ -41,7 +41,7 @@ export default function Home() {
           <p className='md:text-[1.2rem] text-[1rem] font-bold ml-[1rem] tracking-[0.2rem]'>FRONTEND DEVELOPER</p>
         </div>
       </div>
-        <img className='md:mt-[7rem] lg:mt-0 w-full md:h-[35vh] h-[15vh]  absolute lg:top-[10rem] md:top-[14rem]' src="/images/home/line.png" loading='lazy' />
+        <img className='md:mt-[7rem] lg:mt-0 w-full md:h-[35vh] h-[15vh]  absolute lg:top-[10rem] md:top-[14rem]' src="./images/home/line.png" loading='lazy' />
     </header>
 
 
