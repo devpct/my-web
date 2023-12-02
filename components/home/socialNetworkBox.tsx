@@ -14,10 +14,12 @@ function socialNetworkBox({ backgroundColor, images, colorText, title, FST }: So
       {images.map((img, index) => (
           <div
           key={index}
-          className={`flex items-center ${images.length === 1 ? 'lg:w-[88%]' : 'lg:w-[40%]'} w-full lg:h-[142px] h-[100px] bg-[${backgroundColor}] rounded-[28px] shadow-2xl cursor-pointer justify-center ${title[index] === '' ? 'gap-x-0' : 'gap-x-8'}`}
+          className={`flex items-center ${images.length === 1 ? 'lg:w-[88%]' : 'lg:w-[40%]'} w-full lg:h-[142px] h-[100px] rounded-[28px] shadow-2xl cursor-pointer justify-center ${title[index] === '' ? 'gap-x-0' : 'gap-x-8'}`}
+          style={{backgroundColor: backgroundColor}}
           >
           <img className='lg:w-[5.2rem] w-[4rem]' src={img} loading='lazy' />
-          <p className={`lg:text-[${FST[index]}] text-[2.2rem] font-medium text-[${colorText[index]}]`}>{title[index]}</p>
+          <p className={`lg:text-[${FST[index]}] text-[2.2rem] font-medium`}
+          style={{color: colorText[index]}}>{title[index]}</p>
         </div>
       ))}
     </div>

@@ -9,7 +9,7 @@ function Specialties({ imageCategory, title, images }: { imageCategory: string; 
       </div>
       <div className='flex flex-wrap mt-[1.5rem] ml-[3rem] gap-[0.5rem]'>
         {images.map((image : string, index : any) => (
-          <img key={index} src={image} className='w-[4rem]' loading='lazy' />
+          <img key={index} src={image} className='lg:w-[5.2rem] w-[4rem]' loading='lazy' />
         ))}
       </div>
     </div>
