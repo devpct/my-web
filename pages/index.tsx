@@ -9,16 +9,19 @@ export default function Home() {
       imageCategory: './images/home/terminal.png',
       title: 'Expertises',
       images: ['./images/home/languages/js.png', './images/home/languages/ts.png', './images/home/languages/nodejs.png', './images/home/languages/html.png', './images/home/languages/css.png' ],
+      titleImage:['Javascript', 'TypeScript', 'NodeJS', 'HTML', 'CSS']
     },
     {
       imageCategory: './images/home/box.png',
       title: 'Frameworks',
       images: ['./images/home/frameworks/nextjs.png', './images/home/frameworks/react.png', './images/home/frameworks/jquery.png', './images/home/frameworks/scss.png', './images/home/frameworks/redax.png', './images/home/frameworks/mui.png', './images/home/frameworks/bootstrap.png', './images/home/frameworks/tailwind.png', './images/home/frameworks/regex.png', './images/home/frameworks/wordpress.png' ],
+      titleImage:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'Mui', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
     },
     {
       imageCategory: './images/home/git-pull-request.png',
       title: 'Tools',
       images: ['./images/home/tools/figma.png', './images/home/tools/git.png', './images/home/tools/linux.png', './images/home/tools/vscode.png'],
+      titleImage:['Figma', 'Git', 'Vscode', 'Linux']
     },
   ]
 
@@ -62,6 +65,7 @@ export default function Home() {
           imageCategory={item.imageCategory}
           title={item.title}
           images={item.images}
+          titleImage={item.titleImage}
         />
       ))}
  
