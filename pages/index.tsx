@@ -15,13 +15,13 @@ export default function Home() {
       imageCategory: './images/home/box.png',
       title: 'Frameworks',
       images: ['./images/home/frameworks/nextjs.png', './images/home/frameworks/react.png', './images/home/frameworks/jquery.png', './images/home/frameworks/scss.png', './images/home/frameworks/redax.png', './images/home/frameworks/mui.png', './images/home/frameworks/bootstrap.png', './images/home/frameworks/tailwind.png', './images/home/frameworks/regex.png', './images/home/frameworks/wordpress.png' ],
-      titleImage:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'Mui', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
+      titleImage:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'MUI', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
     },
     {
       imageCategory: './images/home/git-pull-request.png',
       title: 'Tools',
       images: ['./images/home/tools/figma.png', './images/home/tools/git.png', './images/home/tools/linux.png', './images/home/tools/vscode.png'],
-      titleImage:['Figma', 'Git', 'Vscode', 'Linux']
+      titleImage:['Figma', 'Git', 'VScode', 'Linux']
     },
   ]
 
