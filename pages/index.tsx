@@ -21,7 +21,7 @@ export default function Home() {
       imageCategory: './images/home/git-pull-request.png',
       title: 'Tools',
       images: ['./images/home/tools/figma.png', './images/home/tools/git.png', './images/home/tools/linux.png', './images/home/tools/vscode.png'],
-      titleImage:['Figma', 'Git', 'VScode', 'Linux']
+      titleImage:['Figma', 'Git', 'Linux', 'VScode']
     },
   ]
 
