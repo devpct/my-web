@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialNetworkBox from '@/components/modules/Home/SocialMediaBoxes'
-import Image from 'next/image';
 
 export default function SocialMedias() {
   return (
@@ -9,9 +8,9 @@ export default function SocialMedias() {
     <div className='w-full h-full bg-[#D9D9D9] md:p-[2.5rem] p-[1rem] rounded-t-[52px] md:mt-[9rem]'>
         
         <div className='flex items-center justify-center gap-x-5'>
-        <Image className='w-[3rem]' src="/images/home/message.png"
-        width={1000}
-        height={100}
+        <img className='w-[3rem]' src="./imgs/home/message.png"
+        
+        
         alt='message'
         />
         <p className='lg:text-[2.2rem] text-[2rem] font-medium'>Connect with me</p>
@@ -21,7 +20,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/gmail-icon.png', '/images/home/linkedin.png']}
+        imgs={['./imgs/home/gmail-icon.png', './imgs/home/linkedin.png']}
         colorText={['#33333394', '#0A66C2']}
         title={['Gmail', 'Linkedin']}
         link={['mailto:mrdevpct@gmail.com', 'https://www.linkedin.com/in/devpct']}
@@ -30,7 +29,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#242938'}
-        images={['/images/home/codepen.png', '/images/home/stackoverflow.png']}
+        imgs={['./imgs/home/codepen.png', './imgs/home/stackoverflow.png']}
         colorText={['#fff', '#DA7526']}
         title={['Codepen', 'Stackoverflow']}
         link={['https://codepen.io/devpct', 'https://stackoverflow.com/users/18831761/mohammad-abdollahzadeh']}
@@ -39,7 +38,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/x.png', '/images/home/instagram.png']}
+        imgs={['./imgs/home/x.png', './imgs/home/instagram.png']}
         colorText={['', '#33333394']}
         title={['', 'Instagram']}
         link={['https://www.twitter.com/devpct', 'https://www.instagram.com/devpct']}
@@ -48,7 +47,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        images={['/images/home/github.png']}
+        imgs={['./imgs/home/github.png']}
         colorText={['#33333394']}
         title={['Github']}
         link={['https://github.com/devpct']}

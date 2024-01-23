@@ -1,38 +1,37 @@
 import React from 'react'
 import Specialties from '@/components/modules/Home/Specialties';
-import Image from 'next/image';
 
 export default function Expertises () {
     const dataExpertises = [
         {
-          imageCategory: '/images/home/terminal.png',
+          imgCategory: './imgs/home/terminal.png',
           title: 'Expertises',
-          images: ['/images/home/languages/js.png', '/images/home/languages/ts.png', '/images/home/languages/nodejs.png', '/images/home/languages/html.png', '/images/home/languages/css.png' ],
-          titleImage:['Javascript', 'TypeScript', 'NodeJS', 'HTML', 'CSS']
+          imgs: ['./imgs/home/languages/js.png', './imgs/home/languages/ts.png', './imgs/home/languages/nodejs.png', './imgs/home/languages/html.png', './imgs/home/languages/css.png' ],
+          titleimg:['Javascript', 'TypeScript', 'NodeJS', 'HTML', 'CSS']
         },
         {
-          imageCategory: '/images/home/box.png',
+          imgCategory: './imgs/home/box.png',
           title: 'Frameworks',
-          images: ['/images/home/frameworks/nextjs.png', '/images/home/frameworks/react.png', '/images/home/frameworks/jquery.png', '/images/home/frameworks/scss.png', '/images/home/frameworks/redax.png', '/images/home/frameworks/mui.png', '/images/home/frameworks/bootstrap.png', '/images/home/frameworks/tailwind.png', '/images/home/frameworks/regex.png', '/images/home/frameworks/wordpress.png' ],
-          titleImage:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'MUI', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
+          imgs: ['./imgs/home/frameworks/nextjs.png', './imgs/home/frameworks/react.png', './imgs/home/frameworks/jquery.png', './imgs/home/frameworks/scss.png', './imgs/home/frameworks/redax.png', './imgs/home/frameworks/mui.png', './imgs/home/frameworks/bootstrap.png', './imgs/home/frameworks/tailwind.png', './imgs/home/frameworks/regex.png', './imgs/home/frameworks/wordpress.png' ],
+          titleimg:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'MUI', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
         },
         {
-          imageCategory: '/images/home/git-pull-request.png',
+          imgCategory: './imgs/home/git-pull-request.png',
           title: 'Tools',
-          images: ['/images/home/tools/figma.png', '/images/home/tools/git.png', '/images/home/tools/linux.png', '/images/home/tools/vscode.png'],
-          titleImage:['Figma', 'Git', 'Linux', 'VScode']
+          imgs: ['./imgs/home/tools/figma.png', './imgs/home/tools/git.png', './imgs/home/tools/linux.png', './imgs/home/tools/vscode.png'],
+          titleimg:['Figma', 'Git', 'Linux', 'VScode']
         },
       ]
   return (
     <>
     <div className='md:mt-[17rem] mt-[10rem]'>
     <div className='flex items-center w-full gap-x-[1rem] justify-center '>
-    <Image
+    <img
       className='w-[3rem] h-[3rem]'
-      src="/images/home/expertises.png"
+      src="./imgs/home/expertises.png"
       alt="Expertises"
-      width={1000}
-      height={100}
+      
+      
     />
     <p className='text-[3rem] font-medium'>Expertises</p>
     </div>
@@ -42,10 +41,10 @@ export default function Expertises () {
     {dataExpertises.map((item, index) => (
     <Specialties
         key={index}
-        imageCategory={item.imageCategory}
+        imgCategory={item.imgCategory}
         title={item.title}
-        images={item.images}
-        titleImage={item.titleImage}
+        imgs={item.imgs}
+        titleimg={item.titleimg}
     />
     ))}
 
