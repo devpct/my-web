@@ -8,7 +8,7 @@ export default function SocialMedias() {
     <div className='w-full h-full bg-[#D9D9D9] md:p-[2.5rem] p-[1rem] rounded-t-[52px] md:mt-[9rem]'>
         
         <div className='flex items-center justify-center gap-x-5'>
-        <img className='w-[3rem]' src="./imgs/home/message.png"
+        <img className='w-[3rem]' src="./images/home/message.png"
         
         
         alt='message'
@@ -20,7 +20,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        imgs={['./imgs/home/gmail-icon.png', './imgs/home/linkedin.png']}
+        images={['./images/home/gmail-icon.png', './images/home/linkedin.png']}
         colorText={['#33333394', '#0A66C2']}
         title={['Gmail', 'Linkedin']}
         link={['mailto:mrdevpct@gmail.com', 'https://www.linkedin.com/in/devpct']}
@@ -29,7 +29,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#242938'}
-        imgs={['./imgs/home/codepen.png', './imgs/home/stackoverflow.png']}
+        images={['./images/home/codepen.png', './images/home/stackoverflow.png']}
         colorText={['#fff', '#DA7526']}
         title={['Codepen', 'Stackoverflow']}
         link={['https://codepen.io/devpct', 'https://stackoverflow.com/users/18831761/mohammad-abdollahzadeh']}
@@ -38,7 +38,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        imgs={['./imgs/home/x.png', './imgs/home/instagram.png']}
+        images={['./images/home/x.png', './images/home/instagram.png']}
         colorText={['', '#33333394']}
         title={['', 'Instagram']}
         link={['https://www.twitter.com/devpct', 'https://www.instagram.com/devpct']}
@@ -47,7 +47,7 @@ export default function SocialMedias() {
 
         <SocialNetworkBox
         backgroundColor={'#fff'}
-        imgs={['./imgs/home/github.png']}
+        images={['./images/home/github.png']}
         colorText={['#33333394']}
         title={['Github']}
         link={['https://github.com/devpct']}

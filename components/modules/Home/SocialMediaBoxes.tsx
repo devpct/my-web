@@ -2,20 +2,20 @@ import React from 'react';
 
 interface SocialNetworkBoxProps {
   backgroundColor: string;
-  imgs: string[];
+  images: string[];
   colorText: string[];
   title: string[];
   link: string[];
   FST: string[];
 }
 
-function SocialNetworkBox({ backgroundColor, imgs, colorText, title, link, FST }: SocialNetworkBoxProps) {
+function SocialNetworkBox({ backgroundColor, images, colorText, title, link, FST }: SocialNetworkBoxProps) {
   return (
     <div className="flex flex-wrap gap-x-[9rem] gap-y-[2rem] w-full h-full justify-center">
-      {imgs.map((img, index) => (
+      {images.map((img, index) => (
         <a
           key={index}
-          className={`flex items-center ${imgs.length === 1 ? 'lg:w-[88%]' : 'lg:w-[40%]'} w-full lg:h-[142px] h-[100px] rounded-[28px] shadow-2xl cursor-pointer justify-center ${title[index] === '' ? 'gap-x-0' : 'gap-x-8'}`}
+          className={`flex items-center ${images.length === 1 ? 'lg:w-[88%]' : 'lg:w-[40%]'} w-full lg:h-[142px] h-[100px] rounded-[28px] shadow-2xl cursor-pointer justify-center ${title[index] === '' ? 'gap-x-0' : 'gap-x-8'}`}
           style={{ backgroundColor: backgroundColor }}
           href={link?.[index]}
         >

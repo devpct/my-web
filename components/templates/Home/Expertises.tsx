@@ -4,21 +4,21 @@ import Specialties from '@/components/modules/Home/Specialties';
 export default function Expertises () {
     const dataExpertises = [
         {
-          imgCategory: './imgs/home/terminal.png',
+          imgCategory: './images/home/terminal.png',
           title: 'Expertises',
-          imgs: ['./imgs/home/languages/js.png', './imgs/home/languages/ts.png', './imgs/home/languages/nodejs.png', './imgs/home/languages/html.png', './imgs/home/languages/css.png' ],
+          images: ['./images/home/languages/js.png', './images/home/languages/ts.png', './images/home/languages/nodejs.png', './images/home/languages/html.png', './images/home/languages/css.png' ],
           titleimg:['Javascript', 'TypeScript', 'NodeJS', 'HTML', 'CSS']
         },
         {
-          imgCategory: './imgs/home/box.png',
+          imgCategory: './images/home/box.png',
           title: 'Frameworks',
-          imgs: ['./imgs/home/frameworks/nextjs.png', './imgs/home/frameworks/react.png', './imgs/home/frameworks/jquery.png', './imgs/home/frameworks/scss.png', './imgs/home/frameworks/redax.png', './imgs/home/frameworks/mui.png', './imgs/home/frameworks/bootstrap.png', './imgs/home/frameworks/tailwind.png', './imgs/home/frameworks/regex.png', './imgs/home/frameworks/wordpress.png' ],
+          images: ['./images/home/frameworks/nextjs.png', './images/home/frameworks/react.png', './images/home/frameworks/jquery.png', './images/home/frameworks/scss.png', './images/home/frameworks/redax.png', './images/home/frameworks/mui.png', './images/home/frameworks/bootstrap.png', './images/home/frameworks/tailwind.png', './images/home/frameworks/regex.png', './images/home/frameworks/wordpress.png' ],
           titleimg:['NextJS', 'ReactJS', 'jQuery', 'Sass', 'Redux', 'MUI', 'Bootstrap', 'Tailwind', 'Regex', 'WordPress']
         },
         {
-          imgCategory: './imgs/home/git-pull-request.png',
+          imgCategory: './images/home/git-pull-request.png',
           title: 'Tools',
-          imgs: ['./imgs/home/tools/figma.png', './imgs/home/tools/git.png', './imgs/home/tools/linux.png', './imgs/home/tools/vscode.png'],
+          images: ['./images/home/tools/figma.png', './images/home/tools/git.png', './images/home/tools/linux.png', './images/home/tools/vscode.png'],
           titleimg:['Figma', 'Git', 'Linux', 'VScode']
         },
       ]
@@ -28,7 +28,7 @@ export default function Expertises () {
     <div className='flex items-center w-full gap-x-[1rem] justify-center '>
     <img
       className='w-[3rem] h-[3rem]'
-      src="./imgs/home/expertises.png"
+      src="./images/home/expertises.png"
       alt="Expertises"
       
       
@@ -43,7 +43,7 @@ export default function Expertises () {
         key={index}
         imgCategory={item.imgCategory}
         title={item.title}
-        imgs={item.imgs}
+        images={item.images}
         titleimg={item.titleimg}
     />
     ))}
