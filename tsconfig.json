@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/home/socialNetworkBox.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/modules/Home/socialNetworkBox.jsx"],
   "exclude": ["node_modules"]
 }
