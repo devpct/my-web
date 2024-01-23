@@ -17,7 +17,7 @@ function Specialties({ imageCategory, title, images, titleImage }: { imageCatego
         {images.map((image: string, index: any) => (
           <Tooltip title={<p style={{ fontSize: "15px" , width : 'fit', textAlign: "center", 
         }}>{titleImage[index]}</p>} key={index} TransitionComponent={Zoom}>
-            <Image src={image} className='lg:w-[5.2rem] w-[4rem]' alt={titleImage} 
+            <Image src={image} className='lg:w-[5.2rem] w-[4rem]' alt={titleImage[index]} 
                 width={1000}
                 height={100}
                 />

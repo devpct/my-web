@@ -20,7 +20,7 @@ function SocialNetworkBox({ backgroundColor, images, colorText, title, link, FST
           style={{ backgroundColor: backgroundColor }}
           href={link?.[index]}
         >
-          <Image className='lg:w-[5.2rem] w-[4rem]' src={img} alt={title} 
+          <Image className='lg:w-[5.2rem] w-[4rem]' src={img} alt={title[index]} 
               width={1000}
               height={100} />
           <p className={`lg:text-[${FST[index]}] text-[2.2rem] font-medium`} style={{ color: colorText[index] }}>{title[index]}</p>
