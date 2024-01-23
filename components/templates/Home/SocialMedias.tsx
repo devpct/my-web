@@ -11,7 +11,9 @@ export default function SocialMedias() {
         <div className='flex items-center justify-center gap-x-5'>
         <Image className='w-[3rem]' src="/images/home/message.png"
         width={1000}
-        height={100}/>
+        height={100}
+        alt='message'
+        />
         <p className='lg:text-[2.2rem] text-[2rem] font-medium'>Connect with me</p>
         </div>
 
